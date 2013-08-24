@@ -1,0 +1,35 @@
+!!!
+%html
+  %head
+    %meta{charset: "utf-8"}
+    %meta{content: "IE=edge,chrome=1", 'http-equiv' => "X-UA-Compatible"}
+    %title= data.page.title || "AdminJS"
+
+    <link href='http://fonts.googleapis.com/css?family=Lato:400,700,400italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Source+Code+Pro:400,700' rel='stylesheet' type='text/css'>
+
+    %link{:href => image_path('favicon.png'), :rel => 'icon'}
+    %link{:href => image_path('favicon@2x.png'), :rel => 'icon', :sizes => '32x32'}
+
+    %link{rel: "stylesheet", href: "css/main.css"}
+    %link{rel: "stylesheet", href: "css/typicons.css"}
+
+    <script src="js/vendor/modernizr-2.6.1.min.js"></script>
+    %body
+      :plain
+        <!--[if lt IE 7]>
+          <p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
+        <![endif]-->
+
+      = partial 'layouts/_header'
+      = yield
+      = partial 'layouts/_footer'
+
+      :javascript
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-43357815-1', 'adminjs.com');
+        ga('send', 'pageview');

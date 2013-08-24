@@ -1,0 +1,13 @@
+%header#masthead
+  %h1= link_to 'AdminJS', '/'
+  %h2 The Backend-Agnostic Administration Framework
+
+  %ul
+    %li
+      = link_to release_path, class: 'download' do
+        %i.icon-download
+        = "Download v#{release_version}"
+    %li
+      = link_to 'http://github.com/GroupTalent/adminjs', class: 'github' do
+        %i.icon-github
+        Github

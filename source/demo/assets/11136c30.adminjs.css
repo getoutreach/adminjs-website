@@ -1,0 +1,67 @@
+@import url("//fonts.googleapis.com/css?family=Lato:300,400,700,400italic");
+@import url("//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css");
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{margin:0;padding:0;border:0;outline:0;font-weight:inherit;font-style:inherit;font-family:inherit;font-size:100%;vertical-align:baseline}
+body{line-height:1;color:#000;background:#fff}
+ol,ul{list-style:none}
+table{border-collapse:separate;border-spacing:0;vertical-align:middle}
+caption,th,td{text-align:left;font-weight:normal;vertical-align:middle}
+a img{border:none}
+html{overflow-y:scroll}
+body,html{font-family:Lato;color:#111}
+a{color:inherit;text-decoration:none}
+.adminjs-application-view > header{position:relative;z-index:100;}
+.adminjs-application-view > header h1{display:inline;font-size:24px;font-weight:bold;float:left;padding:0 48px;line-height:48px}
+.adminjs-application-view > header nav{display:inline-block;line-height:48px;vertical-align:bottom;}
+.adminjs-application-view > header nav ul{display:inline-block;vertical-align:bottom;}
+.adminjs-application-view > header nav ul li{display:inline-block;line-height:36px;vertical-align:bottom;}
+.adminjs-application-view > header nav ul li a{font-size:16px;padding:0 16px;display:inline-block;margin-left:8px;text-transform:capitalize;}
+.adminjs-application-view > header nav ul li a.active{font-weight:bold;background:#efefef;border-top:1px solid #ccc;border-left:1px solid #ccc;border-right:1px solid #ccc;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;padding-bottom:1px;margin-bottom:-1px}
+.adminjs-application-view > header .credits{float:right;font-size:11px;margin-top:18px;margin-right:48px;}
+.adminjs-application-view > header .credits a{color:#2693ff;}
+.adminjs-application-view > header .credits a:hover{text-decoration:underline}
+.adminjs-index-view > header,.adminjs-resource-view > header{position:relative;padding:8px 48px;background:#efefef;border-bottom:1px solid #ccc;border-top:1px solid #ccc;text-align:center;line-height:32px;zoom:1;}
+.adminjs-index-view > header:before,.adminjs-resource-view > header:before,.adminjs-index-view > header:after,.adminjs-resource-view > header:after{content:"";display:table}
+.adminjs-index-view > header:after,.adminjs-resource-view > header:after{clear:both}
+.adminjs-index-view > header h1,.adminjs-resource-view > header h1{text-transform:capitalize;font-size:16px;float:left;white-space:nowrap}
+.adminjs-index-view > header ul.actions,.adminjs-resource-view > header ul.actions{float:right;zoom:1;}
+.adminjs-index-view > header ul.actions:before,.adminjs-resource-view > header ul.actions:before,.adminjs-index-view > header ul.actions:after,.adminjs-resource-view > header ul.actions:after{content:"";display:table}
+.adminjs-index-view > header ul.actions:after,.adminjs-resource-view > header ul.actions:after{clear:both}
+.adminjs-index-view > header ul.actions li,.adminjs-resource-view > header ul.actions li{float:left;margin-left:6px}
+.adminjs-index-view > header ul.actions a,.adminjs-resource-view > header ul.actions a{-webkit-border-radius:4px;border-radius:4px;font-size:12px;color:#fff;font-weight:bold;padding:4px 8px;background:#2693ff;border:1px solid #0984ff;text-transform:capitalize;}
+.adminjs-index-view > header ul.actions a:hover,.adminjs-resource-view > header ul.actions a:hover{background:#0f87ff}
+.adminjs-index-view > header ul.actions a.remove,.adminjs-resource-view > header ul.actions a.remove{-webkit-border-radius:4px;border-radius:4px;font-size:12px;color:#fff;font-weight:bold;padding:4px 8px;background:#d93600;border:1px solid #c33100;text-transform:capitalize;}
+.adminjs-index-view > header ul.actions a.remove:hover,.adminjs-resource-view > header ul.actions a.remove:hover{background:#c83200}
+.adminjs-index-view > header ul.actions a.cancel,.adminjs-resource-view > header ul.actions a.cancel{-webkit-border-radius:4px;border-radius:4px;font-size:12px;color:#fff;font-weight:bold;padding:4px 8px;background:#666;border:1px solid #5c5c5c;text-transform:capitalize;}
+.adminjs-index-view > header ul.actions a.cancel:hover,.adminjs-resource-view > header ul.actions a.cancel:hover{background:#5e5e5e}
+.adminjs-search-view{display:inline-block;}
+.adminjs-search-view .fulltext-container{display:inline-block;position:relative}
+.adminjs-search-view #fulltext{line-height:16px;font-size:14px;width:400px;padding:5px 8px;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;margin:0;border:1px solid #ccc;}
+.adminjs-search-view #fulltext:focus{outline:none;border-color:#2693ff}
+.adminjs-search-view .icons{position:absolute;right:0;top:0}
+.adminjs-search-view .icon-search{line-height:28px;color:#999;padding-right:8px}
+.adminjs-search-view .spinner-display{margin-top:16px;margin-right:16px}
+.adminjs-search-view .toggle-more{padding-left:8px;font-size:20px;color:#999;}
+.adminjs-search-view .toggle-more:hover{color:#2693ff}
+.adminjs-search-view .fixed-indicator{position:fixed;bottom:24px;right:24px;width:25px;height:25px;background:rgba(38,147,255,0.8);-webkit-border-radius:4px;border-radius:4px;}
+.adminjs-search-view .fixed-indicator .spinner{padding-left:9px;margin-top:-3px}
+.adminjs-filter-view{display:inline-block;margin:4px 8px;}
+.adminjs-filter-view .icon-filter{color:#999;font-size:11px}
+.adminjs-filter-view label{color:#666;font-size:11px;text-transform:uppercase;padding-right:8px;}
+.adminjs-filter-view label.check{text-transform:inherit;color:#444}
+.adminjs-filter-view input[type="text"]{line-height:11px;font-size:11px;width:160px;padding:4px 6px;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;margin:0;border:1px solid #ccc;}
+.adminjs-filter-view input[type="text"]:focus{outline:none;border-color:#2693ff}
+.adminjs-index-table-view th,.adminjs-index-table-view td{white-space:nowrap;-o-text-overflow:ellipsis;text-overflow:ellipsis;overflow:hidden;max-width:240px}
+.adminjs-index-table-view,.adminjs-resource-view table{margin-top:-1px;width:100%;border-collapse:collapse;font-size:14px;height:100;overflow:scroll;}
+.adminjs-index-table-view th,.adminjs-resource-view table th,.adminjs-index-table-view td,.adminjs-resource-view table td{padding:8px;border:1px solid #ccc;font-weight:lighter;}
+.adminjs-index-table-view th:first-of-type,.adminjs-resource-view table th:first-of-type,.adminjs-index-table-view td:first-of-type,.adminjs-resource-view table td:first-of-type{padding-left:48px;border-left:none}
+.adminjs-index-table-view th:last-of-type,.adminjs-resource-view table th:last-of-type,.adminjs-index-table-view td:last-of-type,.adminjs-resource-view table td:last-of-type{padding-right:48px;border-right:none}
+.adminjs-index-table-view th.field-name,.adminjs-resource-view table th.field-name,.adminjs-index-table-view td.field-name,.adminjs-resource-view table td.field-name{text-transform:uppercase;text-align:right}
+.adminjs-index-table-view th,.adminjs-resource-view table th{background:#f8f8f8;text-transform:uppercase;font-weight:normal;font-size:12px}
+.adminjs-index-table-view tr:hover td,.adminjs-resource-view table tr:hover td{background:#ffe}
+.adminjs-index-table-view a,.adminjs-resource-view table a{font-weight:bold;color:#2693ff;}
+.adminjs-index-table-view a:hover,.adminjs-resource-view table a:hover{text-decoration:underline}
+.adminjs-index-table-view .text-editor input[type="text"],.adminjs-resource-view table .text-editor input[type="text"]{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;margin:0;border:1px solid #ccc;margin-top:-3px;margin-bottom:-3px;width:256px;}
+.adminjs-index-table-view .text-editor input[type="text"]:focus,.adminjs-resource-view table .text-editor input[type="text"]:focus{outline:none;border-color:#2693ff}
+.has-many-renderer li{display:inline;}
+.has-many-renderer li:after{content:','}
+.has-many-renderer li:last-of-type:after{content:''}
