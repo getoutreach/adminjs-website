@@ -6,6 +6,7 @@ gem "middleman", "~>3.0.13"
 gem "middleman-livereload"
 gem 'middleman-gh-pages'
 gem 'middleman-syntax'
+gem 'middleman-deploy'
 
 gem 'redcarpet'
 
