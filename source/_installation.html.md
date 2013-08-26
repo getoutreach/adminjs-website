@@ -41,7 +41,7 @@ Consult the [EPF website](http://epf.io) for further documentation.
 
 ### Configuration
 
-Once a model has been defined, AdminJS must told to manage it:
+Once a model has been defined, AdminJS must be told to manage it:
 
 ```javascript
 App.configure(function() {
